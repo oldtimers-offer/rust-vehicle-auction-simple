@@ -1,0 +1,3 @@
+sqlx database create --database-url postgres://your_username:your_password@localhost:5434/vehicle_auctions
+
+curl 127.0.0.1:8080/users/register -H 'Content-type: application/json' -d '{"username":"mi", "password":"ti"}'

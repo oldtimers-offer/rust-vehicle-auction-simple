@@ -1,0 +1,17 @@
+[package]
+name = "rust-vehicle-auction-simple"
+version = "0.1.0"
+edition = "2021"
+authors = ["Milan Bjegovic"]
+description = "Simple Rust Backend for Vehicle Auctions"
+
+
+[dependencies]
+actix-web = "4.0"
+serde = { version = "1.0", features = ["derive"] }
+sqlx = { version = "0.8.3", features = ["postgres", "runtime-tokio-native-tls", "migrate", "bigdecimal"] }
+dotenv = "0.15"
+argon2 = "0.5"
+rand = "0.8"
+tokio = { version = "1", features = ["full"] }
+bigdecimal = { version = "0.4", features = ["serde"] }
